@@ -1,0 +1,47 @@
+
+/* ID selector*/
+#div-title
+{
+  background-color: rgb(255, 0, 242);
+  display: block;
+  overflow: auto;
+}
+
+/* Combinators
++ Adjacent sibling -> Element shares same parent which directly follows next
+~ General sibling -> Element shares same parent which does not directly following
+> Child -> Direct child of parent
+  Descendant -> All children of parent
+*/
+#div-title h1
+{
+  font-family: 'Anton', sans-serif;
+  color: brown;
+}
+
+/* Class selector*/
+.title-text
+{
+  color: white;
+  font-family: inherit;
+}
+
+.content-text
+{
+  font-size: 32px;
+  font-family: inherit;
+}
+
+/* Attribute selector*/
+[disabled]
+{
+  background-color: rgb(146, 146, 146);
+}
+
+div
+{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 23px;
+}

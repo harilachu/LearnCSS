@@ -1,10 +1,14 @@
+body{
+  box-sizing: border-box;
+}
 
 /* ID selector*/
 #div-title
 {
-  background-color: rgb(255, 0, 242);
-  display: block;
-  overflow: auto;
+  background: url(https://source.unsplash.com/pink-and-black-wallpaper-9XngoIpxcEo);
+  /* background-color: rgb(255, 0, 81); */
+  padding: 20px;
+  width: 100%;
 }
 
 /* Combinators
@@ -16,7 +20,7 @@
 #div-title h1
 {
   font-family: 'Anton', sans-serif;
-  color: brown;
+  color: rgb(255, 255, 255);
 }
 
 /* Class selector*/
@@ -38,10 +42,99 @@
   background-color: rgb(146, 146, 146);
 }
 
-div
+section > p
 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 23px;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* Pseudo element */
+section > p::first-letter
+{
+  color: red;
+  font-size: 50px;
+}
+
+.main-header
+{
+  width: 100%;
+  background-color: #2ddf5c;
+  padding: 8px 16px;
+}
+
+.main-header>div
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header>div a
+{
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.nav-menu
+{
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  width: calc(100% - 114px);
+}
+
+.nav-menu-items
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.nav-menu-item
+{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 16px;
+}
+
+
+.nav-menu-item a
+{
+  text-decoration: none;
+  color: #0e4f1f;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+
+
+/* Pseudo class*/
+.nav-menu-item a:hover,
+.nav-menu-item a:active
+{
+  color: white;
+  font-weight: bold;
+  border-bottom: 5px solid white;
+
+}
+
+.nav-menu-item--cta a
+{
+  color: white;
+  background-color: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.nav-menu-item--cta a:hover,
+.nav-menu-item--cta a:active
+{
+  color: #ff1b68;
+  background-color: white;
+  border: none;
 }

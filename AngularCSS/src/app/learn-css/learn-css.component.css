@@ -5,6 +5,7 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 /* ID selector*/
@@ -136,7 +137,7 @@ main {
 .section-title {
   font-size: 24px;
   font-weight: 700;
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
   text-align: center;
   width: 100%;
@@ -145,13 +146,16 @@ main {
 
 section#plans div
 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
 .plan {
   background-color: #d5ffdc;
   text-align: center;
   padding: 16px;
-  margin: 25px 30px;
+  margin: 25px 15px;
   display: inline-block;
   width: 30%;
   vertical-align: middle;

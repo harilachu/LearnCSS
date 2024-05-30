@@ -28,7 +28,7 @@
     <h3 class="content-text">Disabled content</h3>
   </div> -->
 
-  <main>
+  <main *ngIf="!loadFlexBox">
     <!-- <section>
       <p>This is a paragraph</p>
     </section> -->
@@ -62,7 +62,7 @@
                 <li>Plus Support</li>
             </ul>
             <div>
-                <button class="plan__button">CHOOSE PLAN</button>
+                <button class="plan__button" (click)="LoadFlexboxComponent()">CHOOSE PLAN</button>
             </div>
         </article>
         <article class="plan">
@@ -81,6 +81,8 @@
         </article>
     </div>
     </section>
+
+
 
     <section class="reason-section">
       <h1 class="section-title">Many Good Reasons to Stick Around</h1>
@@ -120,5 +122,8 @@
     </nav>
 </footer>
 
+<div>
+  <app-learn-flexbox *ngIf="loadFlexBox"></app-learn-flexbox>
+ </div>
 
 </div>

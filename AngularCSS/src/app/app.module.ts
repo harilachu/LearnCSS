@@ -7,7 +7,7 @@ import { LearnCssModule } from './learn-css/learn-css.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

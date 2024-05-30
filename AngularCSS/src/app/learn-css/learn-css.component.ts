@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class LearnCssComponent {
 
+loadFlexBox: boolean = false;
+
+
+LoadFlexboxComponent() {
+  this.loadFlexBox = !this.loadFlexBox;
+}
+
 }

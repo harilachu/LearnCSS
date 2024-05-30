@@ -31,6 +31,13 @@ body {
 .title-text {
   color: white;
   font-family: inherit;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) {
+  .title-text {
+    font-size: 3rem;
+  }
 }
 
 .content-text {
@@ -61,12 +68,15 @@ section>p::first-letter {
   width: 100%;
   background-color: #2ddf5c;
   padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.main-header>div {
-  display: inline-block;
+/* .main-header>div {
+   display: inline-block;
   vertical-align: middle;
-}
+} */
 
 .main-header>div a {
   color: #0e4f1f;
@@ -76,21 +86,23 @@ section>p::first-letter {
 }
 
 .nav-menu {
-  display: inline-block;
+  /* display: inline-block; */
   text-align: right;
   vertical-align: middle;
-  width: calc(100% - 114px);
+  /* width: calc(100% - 114px); */
 }
 
 .nav-menu-items {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 
 .nav-menu-item {
-  display: inline-block;
+   /* display: inline-block; */
   vertical-align: middle;
   margin: 0 16px;
 }
@@ -144,8 +156,7 @@ main {
   color: #2fc658;
 }
 
-section#plans div
-{
+section#plans div {
   width: 80%;
   margin: auto;
   text-align: center;
@@ -155,12 +166,42 @@ section#plans div
   background-color: #d5ffdc;
   text-align: center;
   padding: 16px;
-  margin: 25px 15px;
-  display: inline-block;
-  width: 30%;
+  margin: 25px 0px;
+  width: 100%;
   vertical-align: middle;
   border-radius: 20px;
   box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 40rem){
+
+  section#plans div {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .plan {
+    width: 100%;
+    margin: 25px 15px;
+  }
+}
+
+@media (min-width: 60rem), (orientation: landscape) {
+
+  section#plans div {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .plan {
+    width: 30%;
+    margin: 25px 5px;
+    display: inline-block;
+    min-width: 17rem;
+    max-width: 25rem;
+  }
 }
 
 .plan--highlighted {
@@ -291,20 +332,19 @@ section#plans div
   font-size: 20px;
 }
 
-.key-feature__image
-{
+.key-feature__image {
   background-color: #ffcede;
   width: 128px;
   height: 128px;
   border: 2px solid #c70a4c;
   border-radius: 50%;
-  margin: auto; /* auto centers it*/
+  margin: auto;
+  /* auto centers it*/
   box-shadow: -5px 3px 8px 1px rgba(129, 4, 56, 0.5);
 }
 
 /* footer */
-.main-footer
-{
+.main-footer {
   background-color: #272827;
   color: white;
   margin: 0;
@@ -312,29 +352,26 @@ section#plans div
   text-align: center;
 }
 
-.main-footer__list
-{
+.main-footer__list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.main-footer__list li
-{
+.main-footer__list li {
   display: inline-block;
   margin: 0px 16px;
 }
 
-.main-footer__list a
-{
+.main-footer__list a {
   color: white;
   text-decoration: none;
   font-size: 20px;
 }
 
 .main-footer__list a:hover,
-.main-footer__list a:active{
+.main-footer__list a:active {
   color: #d10061;
   text-decoration: solid;
 }
